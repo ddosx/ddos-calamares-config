@@ -1,6 +1,6 @@
 pkgname=ddos-calamares-config
 _destname1="/etc"
-pkgver=0.1
+pkgver=1.0
 pkgrel=01
 groups=("ddos_installer")
 pkgdesc="calamares config for ddos"
@@ -10,9 +10,9 @@ makedepends=('git')
 depends=()
 conflicts=('manjaro-system')
 
-xserver = "https://github.com"
-xusername = "ddosx"
-xreponame = "ddos-calamares-config"
+xserver="https://github.com"
+xusername="ddosx"
+xreponame="ddos-calamares-config"
 
 url="${xserver}/${xusername}/${xreponame}.git"
 provides=("${pkgname}")
@@ -22,5 +22,6 @@ sha256sums=('SKIP')
 
 package() {
 	install -dm755 ${pkgdir}${_destname1}
-	cp -r ${srcdir}/${pkgc}${_destname1}/* ${pkgdir}${_destname1}
+	mkdir -p ${pkgdir}${_destname1}/calamares
+	cp -r ${srcdir}/${xreponame}${_destname1}/calamares/* ${pkgdir}${_destname1}/calamares/
 }
