@@ -36,22 +36,14 @@ Presentation
     Image {
         id: background1
         source: "1-welcome.png"
-        width: parent.width; height: parent.height
+        width: parent.width;
+        height: 100%
         horizontalAlignment: Image.AlignCenter
         verticalAlignment: Image.AlignTop
         fillMode: Image.Stretch
         anchors.fill: parent
     	}
 
-    Text {
-        anchors.horizontalCenter: background.horizontalCenter
-        anchors.top: background.bottom
-        text: "Welcome"
-        wrapMode: Text.WordWrap
-        width: presentation.width
-        horizontalAlignment: Text.Center
-    	}
-    }
 
     Slide {
 
@@ -61,20 +53,12 @@ Presentation
     Image {
         id: background2
         source: "2-ddos.png"
-        width: parent.width; height: parent.height
+        width: parent.width;
+        height: 100%
         horizontalAlignment: Image.AlignCenter
         verticalAlignment: Image.AlignTop
         fillMode: Image.Stretch
         anchors.fill: parent
-    	}
-
-    Text {
-        anchors.horizontalCenter: background.horizontalCenter
-        anchors.top: background.bottom
-        text: "ddos"
-        wrapMode: Text.WordWrap
-        width: presentation.width
-        horizontalAlignment: Text.Center
     	}
     }
 

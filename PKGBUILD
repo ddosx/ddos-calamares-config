@@ -1,7 +1,7 @@
 pkgname=ddos-calamares-config
 _destname1="/etc"
 pkgver=1.0
-pkgrel=01
+pkgrel=02
 groups=("ddos_installer")
 pkgdesc="calamares config for ddos"
 arch=('any')
